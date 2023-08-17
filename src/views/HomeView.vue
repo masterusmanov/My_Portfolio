@@ -8,7 +8,7 @@
     <div class=" w-full h-screen">
       <div id="alls" class="flex justify-center items-center w-full h-screen gap-6">
         <div id="mypics" class="w-1/2 h-screen flex justify-center">
-          <img id="mypic" src="../assets/images/moy.png" alt="" class=" w-[85%] object-cover rounded-full shadow-2xl shadow-blue-400">
+          <img id="mypic" src="../assets/images/moy.png" alt="" class=" w-[85%] h-[85%] object-cover rounded-full shadow-2xl shadow-blue-400">
         </div>
         <div id="secdiv" class="w-1/2 grid items-center">
           <h1 class="text-white font-bold text-[32px]">USMANOV ELYOR ELMURATOVICH</h1>
@@ -24,6 +24,7 @@
 
 <style lang="scss" scoped>
   @media only screen and (max-width:500px) {
+    /* For mobile phones: */
     #alls{
       display: grid;
       justify-items: center;
@@ -32,6 +33,39 @@
     }
     #mypics{
       height: 300px;
+      width: 300px;
+    }
+    #mypic{
+      width: 400px;
+      height: 300px;
+    }
+    #secdiv{
+      width: 100%;
+      h1{
+        font-size: 18px;
+        text-align: center;
+      }
+      h2{
+        font-size: 14px;
+        text-align: center;
+      }
+      p{
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    #alls{
+      display: grid;
+      justify-items: center;
+      margin-top: 80px;
+      height: 600px;
+    }
+    #mypics{
+      height: 350px;
       width: 300px;
     }
     #mypic{
