@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <main>
+  <main id="mains">
     <div class=" w-full h-screen">
       <div id="alls" class="flex justify-center items-center w-full h-screen gap-6">
         <div id="mypics" class="w-1/2 h-screen flex justify-center">
@@ -23,6 +23,14 @@
 </template>
 
 <style lang="scss" scoped>
+  #mains{
+    margin: 0;
+    padding: 0;
+    background-image: url('../src/assets/images/bg-1.png'), url('../src/assets/images/bg-rounded.png'), url('../src/assets/images/Background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   @media only screen and (max-width:500px) {
     /* For mobile phones: */
     #alls{
