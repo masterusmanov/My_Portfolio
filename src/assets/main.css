@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 body{
-    background-image: url(../src/assets/images/bg-1.png), url(../src/assets/images/bg-rounded.png), url(../src/assets/images/Background.svg);
+    margin: 0;
+    padding: 0;
+    background-image: url('../src/assets/images/bg-1.png'), url('../src/assets/images/bg-rounded.png'), url('../src/assets/images/Background.svg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
