@@ -1,9 +1,9 @@
 <template>
-  <div class="flex justify-beetwen items-center text-[24px]">
-    <ul id="titles" class="flex justify-center items-center gap-2">
+  <div class="mt-5 lg:mt-5 xl:mt-10 ">
+    <ul class="flex flex-wrap justify-center xl:justify-normal items-center gap-3">
       <li v-for="link in navlink" :key="link.id" class="">
-        <router-link :to="link.link" class="flex items-center px-3 rounded-lg border border-yellow-400  text-white hover:text-black hover:bg-yellow-400">
-        <span>{{ link.title }}</span>
+        <router-link :to="link.link" class="flex items-center px-3 py-1 rounded-lg border border-yellow-400  text-white hover:text-black hover:bg-yellow-400">
+        <span class="md:text-2xl lg:text-sm">{{ link.title }}</span>
         </router-link>
       </li>
     </ul>
@@ -17,17 +17,5 @@ const navlink = ref(navLinks);
 </script>
 
 <style lang="scss" scoped>
-@media only screen and (max-width:500px) {
-  #titles{
-    display: flex;
-    font-size: 14px;  
-    gap: 0px;
-    flex-wrap: wrap;
-    gap: 5px;
-    span{
-      padding-inline: 5px;
-      border-radius: 15px;
-    }
-  }
-}
+
 </style>
