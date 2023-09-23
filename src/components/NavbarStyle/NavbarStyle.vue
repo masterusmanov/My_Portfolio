@@ -2,7 +2,7 @@
   <div class="mt-5 lg:mt-5 xl:mt-10 ">
     <ul class="flex flex-wrap justify-center xl:justify-normal items-center gap-3">
       <li v-for="link in navlink" :key="link.id" class="">
-        <router-link :to="link.link" class="flex items-center px-3 py-1 rounded-lg border border-yellow-400  text-white hover:text-black hover:bg-yellow-400">
+        <router-link :to="link.link" class="flex items-center px-3 py-1 rounded-lg text-white hover:text-black hover:bg-yellow-400">
         <span class="md:text-2xl lg:text-sm">{{ link.title }}</span>
         </router-link>
       </li>
@@ -17,5 +17,11 @@ const navlink = ref(navLinks);
 </script>
 
 <style lang="scss" scoped>
-
+.router-link-exact-active {
+  background-color: yellow;
+  color: black;
+}
+.router-link-exact-active:hover {
+  color: white;
+}
 </style>
