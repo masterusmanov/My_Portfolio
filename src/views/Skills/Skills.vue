@@ -14,6 +14,13 @@
             :alt="link.title"
             class="w-[50px] h-[50px] md:w-[100px] md:h-[100px] xl:w-[150px] xl:h-[150px] rounded-full object-cover"
           />
+          <img
+            v-for="link in imgLinks"
+            :key="link.id"
+            :src="link.link"
+            :alt="link.title"
+            class="w-[50px] h-[50px] md:w-[100px] md:h-[100px] xl:w-[150px] xl:h-[150px] rounded-full object-cover"
+          />
         </div>
       </div>
     </div>

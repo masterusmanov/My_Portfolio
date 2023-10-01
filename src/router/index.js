@@ -1,11 +1,11 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView/AboutView.vue'
-import Skills from '../views/Skills/Skills.vue'
-import Project from '../views/Project/Project.vue'
-import Blog from '../views/Blog/Blog.vue'
-import Workplace from '../views/Workplace/Workplace.vue'
-
+import { createRouter, createWebHistory } from 'vue-router';
+import HomeView from '../views/HomeView.vue';
+import AboutView from '../views/AboutView/AboutView.vue';
+import Skills from '../views/Skills/Skills.vue';
+import Project from '../views/Project/Project.vue';
+import Blog from '../views/Blog/Blog.vue';
+import Workplace from '../views/Workplace/Workplace.vue';
+import Contact from '../views/Contact/Contact.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -39,6 +39,11 @@ const router = createRouter({
       path: '/workplace',
       name: 'workplace',
       component: Workplace
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: Contact
     }
   ]
 })
