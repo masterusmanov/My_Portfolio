@@ -1,5 +1,5 @@
 <template>
-  <Mainnavbar />
+  <Mainnavbar class="sticky top-0 z-50"/>
   <section>
     <div class="container mx-auto">
       <div class="w-[100%] mt-10 md:mt-14 lg:mt-[100px]">

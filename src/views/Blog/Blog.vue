@@ -1,5 +1,5 @@
 <template>
-    <Mainnavbar/>   
+    <Mainnavbar class="sticky top-0 z-50"/>   
     <section class="my-10">
         <div class="container mx-auto">
             <h1 class="text-center text-yellow-300 font-bold text-4xl mb-10">Personal blog</h1>

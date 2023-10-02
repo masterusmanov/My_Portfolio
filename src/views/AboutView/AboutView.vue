@@ -1,5 +1,5 @@
 <template>
-  <Mainnavbar/>
+  <Mainnavbar class="sticky top-0 z-50"/>
   <section>
     <div class="container mx-auto lg:flex lg:mt-5 xl:mt-[50px]">
       <div class="w-[100%] grid mt-10 md:mt-14 justify-center">
